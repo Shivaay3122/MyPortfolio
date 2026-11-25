@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #172554;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    background: #334155;
+    padding: 18px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+main section {
+    padding: 35px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: white;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+/* One-dimensional Flexbox layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.flex-container div {
+    background: #2563eb;
+    color: white;
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Two-dimensional Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid-container div {
+    background: #7c3aed;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172554;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
